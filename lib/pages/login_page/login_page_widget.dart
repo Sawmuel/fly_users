@@ -49,7 +49,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
       "correo": email,
       "contraseña" : contra
     };
-    final url = Uri.parse("https://qf2xbpl7-3000.brs.devtunnels.ms/api/v1/usuarios/crear");
+    final url = Uri.parse("https://nzb6glvg-3000.brs.devtunnels.ms/api/v1/usuarios/crear");
     final response = await http.post(url, headers: {"Content-Type": "application/json; charset=UTF-8"}, body: jsonEncode(body));
 
     if(response.statusCode == 200){

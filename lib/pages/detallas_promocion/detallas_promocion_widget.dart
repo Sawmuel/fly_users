@@ -195,7 +195,6 @@ class _DetallasPromocionWidgetState extends State<DetallasPromocionWidget>
   }
 
 
-
   @override
   void dispose() {
     _model.dispose();
@@ -229,7 +228,7 @@ class _DetallasPromocionWidgetState extends State<DetallasPromocionWidget>
             image: DecorationImage(
               fit: BoxFit.cover,
               image: CachedNetworkImageProvider(
-                'https://images.unsplash.com/photo-1528114039593-4366cc08227d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8aXRhbHl8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60',
+                'https://media.discordapp.net/attachments/1030313400221315152/1179137923099152384/c0258946faa62d4e10728ed14eace338.jpg?ex=6578b0c4&is=65663bc4&hm=c0c4dfcaef9acced407ad45afdb7cecdb036f0b44336465b1dff88507678d3b5&=&format=webp&width=291&height=700',
               ),
             ),
           ),

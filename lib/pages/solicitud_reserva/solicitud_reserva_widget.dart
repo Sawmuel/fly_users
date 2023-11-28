@@ -127,7 +127,7 @@ class _SolicitudReservaWidgetState extends State<SolicitudReservaWidget>
       "correosa": correo,
     };
 
-    final url = Uri.parse("https://qf2xbpl7-3000.brs.devtunnels.ms/api/v1/solicitud/crear");
+    final url = Uri.parse("https://nzb6glvg-3000.brs.devtunnels.ms/api/v1/solicitud/crear");
     final response = await http.post(
       url,
       headers: {"Content-Type": "application/json; charset=UTF-8"},
@@ -144,7 +144,7 @@ class _SolicitudReservaWidgetState extends State<SolicitudReservaWidget>
   List promo = [];
 
   Future<void> listarPromo() async {
-    final url = Uri.parse("https://qf2xbpl7-3000.brs.devtunnels.ms/api/v1/promociones/lista");
+    final url = Uri.parse("https://nzb6glvg-3000.brs.devtunnels.ms/api/v1/promociones/lista");
     final response = await http.get(url);
     if (response.statusCode == 200) {
       final json = jsonDecode(response.body) as List;

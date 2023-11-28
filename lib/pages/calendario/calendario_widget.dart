@@ -51,7 +51,7 @@ class _CalendarioWidgetState extends State<CalendarioWidget>
 
   List prim= [];
   Future<void> primerVuelo() async {
-    final url = Uri.parse("https://qf2xbpl7-3000.brs.devtunnels.ms/api/v1/vuelos/correo/ultimo/$currentUserEmail");
+    final url = Uri.parse("https://nzb6glvg-3000.brs.devtunnels.ms/api/v1/vuelos/correo/ultimo/$currentUserEmail");
     final response = await http.get(url);
     if (response.statusCode == 200) {
       final json = jsonDecode(response.body) as List;
@@ -67,7 +67,7 @@ class _CalendarioWidgetState extends State<CalendarioWidget>
 
   List penu= [];
   Future<void> penultimoVuelo() async {
-    final url = Uri.parse("https://qf2xbpl7-3000.brs.devtunnels.ms/api/v1/vuelos/correo/penultimo/$currentUserEmail");
+    final url = Uri.parse("https://nzb6glvg-3000.brs.devtunnels.ms/api/v1/vuelos/correo/penultimo/$currentUserEmail");
     final response = await http.get(url);
     if (response.statusCode == 200) {
       final json = jsonDecode(response.body) as List;

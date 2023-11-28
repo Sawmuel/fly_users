@@ -97,7 +97,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget>
   List soli = [];
   Future<void> listarSoli() async {
     final url = Uri.parse(
-        "https://qf2xbpl7-3000.brs.devtunnels.ms/api/v1/solicitud/correo/$currentUserEmail");
+        "https://nzb6glvg-3000.brs.devtunnels.ms/api/v1/solicitud/correo/$currentUserEmail");
     final response = await http.get(url);
     if (response.statusCode == 200) {
       final json = jsonDecode(response.body) as List;
@@ -353,6 +353,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget>
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             children: [
+                              for (int index = 0; index < soli.length; index++)
                               Column(
                                 mainAxisSize: MainAxisSize.max,
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -367,7 +368,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget>
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         0, 4, 0, 0),
                                     child: Text(
-                                      'Aug 20, 2021',
+                                      soli[index]['fecha'],
                                       style: FlutterFlowTheme.of(context)
                                           .displaySmall,
                                     ),

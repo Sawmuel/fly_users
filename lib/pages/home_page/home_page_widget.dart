@@ -46,7 +46,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
 
   List prod = [];
   Future<void> listarLastFly() async {
-    final url = Uri.parse("https://qf2xbpl7-3000.brs.devtunnels.ms/api/v1/vuelos/correo/ultimo/$currentUserEmail");
+    final url = Uri.parse("https://nzb6glvg-3000.brs.devtunnels.ms/api/v1/vuelos/correo/ultimo/$currentUserEmail");
     final response = await http.get(url);
     if (response.statusCode == 200) {
       final json = jsonDecode(response.body) as List;

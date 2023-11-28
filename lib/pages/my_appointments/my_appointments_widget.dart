@@ -52,7 +52,7 @@ class _MyAppointmentsWidgetState extends State<MyAppointmentsWidget> {
 
   Future<void> listarVuelos() async {
     final url = Uri.parse(
-        "https://qf2xbpl7-3000.brs.devtunnels.ms/api/v1/vuelos/correo/$currentUserEmail");
+        "https://nzb6glvg-3000.brs.devtunnels.ms/api/v1/vuelos/correo/$currentUserEmail");
     final response = await http.get(url);
     if (response.statusCode == 200) {
       final Map<String, dynamic> json = jsonDecode(response.body);
